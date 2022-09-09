@@ -1,0 +1,18 @@
+@import 'btn';
+@import 'btn-back';
+@mixin flex-box(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+html, body{
+  margin: 0;
+}
+.container{
+  @include flex-box();
+  width: 80vw;
+  margin: 0 auto;
+  min-height: 100vh;
+}
